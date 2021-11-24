@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styled.css';
 
@@ -22,20 +23,24 @@ function InputArea() {
         <FormControl className="form-input">
           <OutlinedInput placeholder="Ex.: Restaurante" />
         </FormControl>
-        <IconButton type="submit" aria-label="search">
+        <IconButton type="submit" className="icon-search">
           <SearchIcon />
         </IconButton>
       </div>
       <div className="btn">
         <div className="btnv">
-          <Button
-            className="btnvoltar"
-            variant="outlined"
-            size="large"
-            startIcon={<ChevronLeftIcon cursor="pointer" />}
-          >
-            Voltar
-          </Button>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button
+              className="btnvoltar"
+              variant="outlined"
+              size="large"
+              startIcon={
+                <ChevronLeftIcon cursor="pointer" className="svg-botao" />
+              }
+            >
+              Voltar
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

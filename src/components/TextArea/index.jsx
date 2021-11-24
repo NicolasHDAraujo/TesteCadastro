@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './styled.css';
 
@@ -38,12 +39,14 @@ function TextArea() {
       <div className="title">
         <span>Serviço de Beleza</span>
         <div className="btnc">
-          <Button
-            variant="outlined"
-            className="btnselecao"
-            size="large"
-            endIcon={<EditIcon cursor="pointer" />}
-          ></Button>
+          <Link to="/search">
+            <Button
+              variant="outlined"
+              className="btnselecao"
+              size="large"
+              endIcon={<EditIcon cursor="pointer" className="svg" />}
+            ></Button>
+          </Link>
         </div>
       </div>
       <div className="btn">
@@ -52,7 +55,9 @@ function TextArea() {
             className="btnvoltar"
             variant="outlined"
             size="large"
-            startIcon={<ChevronLeftIcon cursor="pointer" />}
+            startIcon={
+              <ChevronLeftIcon cursor="pointer" className="svg-botao" />
+            }
           >
             Voltar
           </Button>
@@ -62,7 +67,9 @@ function TextArea() {
             className="btnfinalizar"
             variant="contained"
             size="large"
-            startIcon={<CheckCircleOutlineIcon cursor="pointer" />}
+            startIcon={
+              <CheckCircleOutlineIcon cursor="pointer" className="svg-botao" />
+            }
           >
             Finalizar cadastro
           </Button>

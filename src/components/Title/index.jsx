@@ -9,7 +9,7 @@ function Title() {
     <div className="container">
       <div className="header">
         <span className="title">
-          <StoreIcon fontSize="large" />
+          <StoreIcon className="icon" />
           Segmento da empresa
         </span>
       </div>

@@ -1,14 +1,15 @@
 .footer {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  margin-top: 20em;
+  margin-top: 15em;
+  margin-bottom: 30px;
 }
 
 .btnvoltar {
   height: 4rem;
   width: 12rem;
-  margin-right: 120px !important;
+  margin-right: 50px !important;
   position: fixed;
 }
 
@@ -28,4 +29,11 @@
   background-color: #e6e6e6 !important;
   color:#000;
   border-color: #e6e6e6 !important;
+}
+
+@media(max-width: 900px) {
+  .footer {
+    width: 90%;
+    margin-top: 10em;
+  }
 }

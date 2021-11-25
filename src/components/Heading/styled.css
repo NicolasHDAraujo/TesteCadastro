@@ -30,3 +30,24 @@
   text-align: center;
   margin-bottom: 80px;
 }
+
+@media(max-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+  }
+  .header span {
+    font-size: 4em;
+  }
+
+  .paragrafo {
+    font-size: 2em;
+  }
+  .icon{
+    margin: 0px 10px 0 0;
+  }
+}

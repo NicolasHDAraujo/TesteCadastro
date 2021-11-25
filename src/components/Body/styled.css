@@ -24,7 +24,7 @@
 
 
 .btnselecao{
-  height: 50px;
+  height: 60px;
   width: 60px;
   margin-top: 10px;
 }
@@ -69,7 +69,7 @@
   flex-direction: column;
   padding: 10px;
   width: 66%;
-  font-size: 2rem;
+  font-size: 3em;
 }
 
 .result p {
@@ -89,4 +89,27 @@
 .result p:hover {
   background-color: #f0f0f0;
   border-color: #000;
+}
+
+@media(max-width: 900px) {
+  .container-paragrafo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .paragrafo2{
+    font-size: 2em;
+  }
+
+  .categoria{
+    font-size: 5em;
+  }
+  .form{
+    width: 100%;
+  }
+  .result{
+    width: 100%;
+    padding: 0;
+    font-size: 1.5em;
+  }
 }

@@ -49,7 +49,7 @@ function Body({
                   <InputAdornment position="end" onClick={handleGetCategories}>
                     <IconButton
                       type="submit"
-                      disableTouchRipple="true"
+                      disableRipple
                       className="icon-search"
                     >
                       <SearchIcon />

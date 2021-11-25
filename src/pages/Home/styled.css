@@ -5,3 +5,14 @@
   align-items: center;
   margin: 0 auto;
 }
+
+@media(max-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

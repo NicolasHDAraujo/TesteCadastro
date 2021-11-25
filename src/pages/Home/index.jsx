@@ -14,16 +14,12 @@ function Home() {
     id: 'd5954570-1a24-11ec-890a-357ed7be30b6',
     descricao: 'Serviços de beleza',
   };
-
   const categoriesInitial = [];
 
   const [inputValue, setInputValue] = useState('');
   const [viewComponent, setViewComponent] = useState(false);
-  const [categories, setCategories] = useState([]);
-  const [category, setCategory] = useState({
-    id: 'd5954570-1a24-11ec-890a-357ed7be30b6',
-    descricao: 'Serviços de beleza',
-  });
+  const [categories, setCategories] = useState(categoriesInitial);
+  const [category, setCategory] = useState({ ...initialState });
 
   function handleClick() {
     setViewComponent((state) => !state);

@@ -21,3 +21,6 @@
 .icon-search{
     transform: scale(2);
 }
+.icon-search:hover{
+  color: #9B9999;
+}

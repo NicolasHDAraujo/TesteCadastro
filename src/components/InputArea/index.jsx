@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
+import { InputAdornment } from '@mui/material';
 
 function InputArea() {
   return (
@@ -21,11 +22,21 @@ function InputArea() {
       </div>
       <div className="form">
         <FormControl className="form-input">
-          <OutlinedInput placeholder="Ex.: Restaurante" />
+          <OutlinedInput
+            placeholder="Ex.: Restaurante"
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  type="submit"
+                  className="icon-search"
+                  disableRipple="true"
+                >
+                  <SearchIcon />
+                </IconButton>
+              </InputAdornment>
+            }
+          />
         </FormControl>
-        <IconButton type="submit" className="icon-search">
-          <SearchIcon />
-        </IconButton>
       </div>
       <div className="btn">
         <div className="btnv">

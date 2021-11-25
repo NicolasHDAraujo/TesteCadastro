@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 20em;
+}
+
+.btnvoltar {
+  height: 4rem;
+  width: 12rem;
+  margin-right: 120px !important;
+  position: fixed;
+}
+
+.btnvoltar:hover {
+  background-color: #e6e6e6 !important;
+  color:#000;
+  border-color: #e6e6e6 !important;
+}
+
+
+.btnfinalizar {
+  height: 4rem;
+  width: 40rem;
+}
+
+.btnfinalizar:hover {
+  background-color: #e6e6e6 !important;
+  color:#000;
+  border-color: #e6e6e6 !important;
+}

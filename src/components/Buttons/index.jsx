@@ -7,12 +7,13 @@ import Button from '@mui/material/Button';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
-function Buttons({ viewComponent, handleClick }) {
+function Buttons({ viewComponent, handleClick, handleClickFinish }) {
   return (
     <>
       {!viewComponent ? (
         <div className="footer">
           <Button
+            onClick={handleClickFinish}
             className="btnvoltar"
             variant="outlined"
             size="large"
@@ -24,6 +25,7 @@ function Buttons({ viewComponent, handleClick }) {
           </Button>
 
           <Button
+            onClick={handleClickFinish}
             className="btnfinalizar"
             variant="contained"
             size="large"

@@ -10,6 +10,13 @@ import Body from '../../components/Body';
 import Buttons from '../../components/Buttons';
 
 function Home() {
+  const initialState = {
+    id: 'd5954570-1a24-11ec-890a-357ed7be30b6',
+    descricao: 'Serviços de beleza',
+  };
+
+  const categoriesInitial = [];
+
   const [inputValue, setInputValue] = useState('');
   const [viewComponent, setViewComponent] = useState(false);
   const [categories, setCategories] = useState([]);
@@ -33,8 +40,11 @@ function Home() {
   function handleSelectCategory({ id, descricao }) {
     setCategory({ id, descricao });
     setViewComponent(false);
+  }
 
-    console.log(id, descricao);
+  function handleClickFinish() {
+    setCategory({ ...initialState });
+    setCategories(categoriesInitial);
   }
 
   return (
@@ -50,7 +60,11 @@ function Home() {
         categories={categories}
         handleSelectCategory={handleSelectCategory}
       />
-      <Buttons viewComponent={viewComponent} handleClick={handleClick} />
+      <Buttons
+        viewComponent={viewComponent}
+        handleClickFinish={handleClickFinish}
+        handleClick={handleClick}
+      />
     </div>
   );
 }

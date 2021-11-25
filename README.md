@@ -1,7 +1,6 @@
-# TESTE DESENVOLVIMENTO DA INTERFACE PARA CADASTRO DE SERVIÇOS (EM ANDAMENTO)
+# TESTE DESENVOLVIMENTO DA INTERFACE PARA CADASTRO DE SERVIÇOS
 
-Este projeto é referente ao teste realizado para a vaga de frontend realizado na linguagem React.
-Ainda não finalizado.
+Este projeto é referente ao teste realizado para a vaga de frontend realizado na linguagem Javascript, juntamente com o uso das bibliotecas ReactJS e MaterialUI.
 
 ## Para iniciar o projeto
 
